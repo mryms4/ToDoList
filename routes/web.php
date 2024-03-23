@@ -26,3 +26,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/todos','App\Http\Controllers\todoController@todos');
 Route::get('/create','App\Http\Controllers\todoController@create');
+Route::get('/edit','App\Http\Controllers\todoController@edit');
+Route::post('/store','App\Http\Controllers\todoController@store');

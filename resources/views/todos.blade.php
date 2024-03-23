@@ -9,7 +9,23 @@
 
                 <div class="card-body">
 
-                    Welcome to To Do List site!
+                   <h4> Welcome to To Do List site!</h4><br>
+
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Compeleted</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </div>
