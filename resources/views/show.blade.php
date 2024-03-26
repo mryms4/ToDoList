@@ -8,15 +8,10 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                    <a href="{{'create'}}" class="btn btn-sm btn-info">Create To do</a>
-
+                   
+                    <a href="{{url()->previous()}}" class="btn btn-sm btm-info">Go Back</a><br>
+                    <b>your To Do title is:</b>{{$todo->title}}
+                    <b>your To Do description is:</b>{{$todo->description}}
                 </div>
             </div>
         </div>
