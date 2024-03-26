@@ -36,7 +36,7 @@ public function store(TodoRequest $request){
     return redirect('/todos');
 }
 
-public function show( $id)
+public function show($id)
 {
     $todo = Todo::findOrFail($id);
 
@@ -61,9 +61,9 @@ public function update(TodoRequest $request)
     $todo->update([
         'title' => $request->title,
         'description' => $request->description,
-        'complete' => $request->completed, 
+        'complete' => $request->complete, 
     ]);
-    $todo->show();
+    
     $request->session()->flash('alert-info', 'To Do Updated successfully!'); 
 
     return redirect('/todos');

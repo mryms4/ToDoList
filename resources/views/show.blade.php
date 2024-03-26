@@ -9,8 +9,8 @@
 
                 <div class="card-body">
                    
-                    <a href="{{url()->previous()}}" class="btn btn-sm btm-info">Go Back</a><br>
-                    <b>your To Do title is:</b>{{$todo->title}}
+                    <a href="{{url()->previous()}}" class="btn btn-sm btn-info">Go Back</a><br>
+                    <b>your To Do title is:</b>{{$todo->title}}<br>
                     <b>your To Do description is:</b>{{$todo->description}}
                 </div>
             </div>

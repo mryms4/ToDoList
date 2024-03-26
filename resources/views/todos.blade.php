@@ -54,7 +54,7 @@
                                     <td>{{$todo->title}}</td>
                                     <td>{{$todo->description}}</td>
                                     <td>
-                                        @if($todo->compelete == 1)
+                                        @if(($todo->complete == 1))
                                             <a href="" class="btn btn-sm btn-success">compeleted</a>
                                         @else
                                             <a href="" class="btn btn-sm btn-danger">in compeleted</a>
@@ -62,7 +62,7 @@
                                     </td>
                                     <td id="outer">
                                         <a href="{{route('edit' , $todo->id)}}" class="inner btn btn-sm btn-info">Edit</a>
-                                        <a href="{{'show' , $todo->id}}" class="inner btn btn-sm btn-success">View</a>
+                                        <a href="{{route('show' , $todo->id)}}" class="inner btn btn-sm btn-success">View</a>
                                         <form method="POST" action="{{'destroy'}}" class="inner">
                                             @csrf
                                             @method('DELETE')

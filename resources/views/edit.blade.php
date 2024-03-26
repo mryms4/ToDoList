@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <h4>Edit Form</h4>
-                    <form method="POST" action="{{'update' , $todo->id}}">
+                    <form method="POST" action="{{route('update' , $todo->id)}}">
                       @csrf
                       @method('PUT')
                       <input type="hidden" name="todo_id" value="{{$todo->id}}">
@@ -24,7 +24,7 @@
                         </div>
                         <div class="mb-3">
                           <label >Status</label>
-                          <select name="compelete" class="form-control">
+                          <select name="complete" class="form-control" >
                             <option disabled selected>Select Option</option>
                             <option value="1">Compeleted</option>
                             <option value="0">In Compeleted</option>

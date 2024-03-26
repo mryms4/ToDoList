@@ -28,9 +28,9 @@ Route::get('/todos','App\Http\Controllers\todoController@todos');
 Route::get('/create','App\Http\Controllers\todoController@create');
 Route::get('/edit','App\Http\Controllers\todoController@edit');
 Route::post('/store','App\Http\Controllers\todoController@store');
-Route::get('/{id}/show','App\Http\Controllers\todoController@show');
+Route::get('/{id}/show','App\Http\Controllers\todoController@show')->name('show');
 Route::get('/{id}/edit','App\Http\Controllers\todoController@edit')->name('edit');
-Route::put('/update','App\Http\Controllers\todoController@update');
+Route::put('/update','App\Http\Controllers\todoController@update')->name('update');
 Route::delete('/destroy','App\Http\Controllers\todoController@destroy');
 
 
