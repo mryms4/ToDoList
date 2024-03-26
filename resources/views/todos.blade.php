@@ -54,7 +54,7 @@
                                     <td>{{$todo->title}}</td>
                                     <td>{{$todo->description}}</td>
                                     <td>
-                                        @if(($todo->complete == 1))
+                                        @if(($todo->compelete == 1))
                                             <a href="" class="btn btn-sm btn-success">compeleted</a>
                                         @else
                                             <a href="" class="btn btn-sm btn-danger">in compeleted</a>

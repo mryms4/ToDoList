@@ -61,7 +61,7 @@ public function update(TodoRequest $request)
     $todo->update([
         'title' => $request->title,
         'description' => $request->description,
-        'complete' => $request->complete, 
+        'compelete' => $request->compelete, 
     ]);
     
     $request->session()->flash('alert-info', 'To Do Updated successfully!'); 

@@ -24,7 +24,7 @@
                         </div>
                         <div class="mb-3">
                           <label >Status</label>
-                          <select name="complete" class="form-control" >
+                          <select name="compelete" class="form-control" >
                             <option disabled selected>Select Option</option>
                             <option value="1">Compeleted</option>
                             <option value="0">In Compeleted</option>
